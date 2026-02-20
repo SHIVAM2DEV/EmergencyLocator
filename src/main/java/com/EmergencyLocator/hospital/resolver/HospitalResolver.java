@@ -23,4 +23,6 @@ public class HospitalResolver {
     public Hospital saveHospital(@RequestBody Hospital hospital){
         return hospitalService.save(hospital);
     }
+
+    
 }

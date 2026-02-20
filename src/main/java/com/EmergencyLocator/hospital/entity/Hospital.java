@@ -16,7 +16,7 @@ public class Hospital {
     private String name;
     private  double latitude;
     private double longitude;
-    private  int availableBeds;
+    private  Long availableBeds;
     private boolean emergencySupport;
     private String contact;
 
