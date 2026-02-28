@@ -15,9 +15,9 @@ public class UserResolver {
     @Autowired
     private UserService userService;
 
-    @PostMapping
-    public User saveUser(@RequestBody  User user ){
-        return userService.saveUser(user);
+    @PostMapping("/register")
+    public ResponseEntity<User> saveUser(@RequestBody  User user ){
+        return ResponseEntity.ok(userService.saveUser(user));
     }
 
     @GetMapping

@@ -60,7 +60,7 @@ public class EmergencyServiceImpl implements EmergencyService {
             distance = Math.round(distance * 100.0) / 100.0;
             return HelpRespons.builder()
                     .userId(userId)
-                    .name(user.getName())
+                    .name(user.getUsername())
                     .hospitalName(hospital.getName())
                     .emergencyContact(user.getEmergencyContact())
                     .availableBeds(hospital.getAvailableBeds())
